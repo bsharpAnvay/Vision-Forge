@@ -10,7 +10,7 @@ module half_adder_tb;
     initial begin
         $dumpfile("half_adder_tb.vcd");
         $dumpvars(0, half_adder_tb);
-        $monitor("A=%b, B=%b, S=%b, C=%b", A, B, S, C);  // Corrected $monitor statement
+        $monitor("A=%b, B=%b, S=%b, C=%b", A, B, S, C);  
 
         A = 0; B = 0;
         #10;
@@ -20,6 +20,6 @@ module half_adder_tb;
         #10;
         A = 1; B = 1;
         #10;
-        $finish;  // Added $finish to end the simulation
+        $finish;  
     end
 endmodule
